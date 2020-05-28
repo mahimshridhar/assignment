@@ -1,0 +1,10 @@
+input {
+  outline: none;
+  border: none;
+  font-family: inherit;
+  padding: 1.2rem 1rem;
+  border-radius: 0.5rem;
+
+  &::placeholder {
+  }
+}

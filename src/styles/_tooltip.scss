@@ -1,0 +1,40 @@
+.tooltip--status {
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  left: 0;
+  top: 2.5em;
+  width: 200px;
+  box-shadow: 0 0.1rem 1rem rgba($color: #000000, $alpha: 0.1);
+  cursor: pointer;
+}
+
+.tooltip__list {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.tooltip__item {
+  flex-basis: 50%;
+  padding: 1rem 0;
+}
+
+.tooltip--col {
+  cursor: pointer;
+  list-style: none;
+  width: 200px;
+  box-shadow: 0 0.1rem 1rem rgba($color: #000000, $alpha: 0.1);
+  left: -20rem;
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+}
+
+.tooltip--col__list {
+  list-style: none;
+}
+
+.tooltip--col__item {
+  padding: 1rem 0;
+}

@@ -1,0 +1,57 @@
+.sidebar {
+  height: 100vh;
+  display: flex;
+
+  &--left {
+    background-color: #001d4d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 0 7rem;
+  }
+
+  &--right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--upgrade {
+    background-color: #55c57a;
+  }
+
+  &__control--top,
+  &__control--bottom {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__control--text {
+    padding: 20px;
+  }
+  &__control--pages {
+    padding: 20px;
+  }
+
+  &__control--link {
+    list-style: none;
+  }
+
+  &__control--link li {
+    font-size: 1.1rem;
+    margin: 0.1rem 0;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+  }
+  &__control--link li:not(:first-child) {
+    background: #94e1ff;
+    color: blue;
+  }
+
+  &--downloadapp {
+    margin-bottom: 4rem;
+  }
+}

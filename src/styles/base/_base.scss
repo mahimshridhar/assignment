@@ -1,0 +1,18 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+
+//base -> typgraphy -> genrl layout -> page layout -> components
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: white;
+  color: #333333;
+}
