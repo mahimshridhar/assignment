@@ -23,14 +23,15 @@
 .resizer::after,
 .resizer::before {
   content: "";
-  border-left: 0.5px solid #333;
+  border-left: 0.5px solid #cccccc;
   position: absolute;
   top: 50%;
   transform: translateY(-100%);
   right: 0;
   display: inline-block;
-  height: 20px;
+  height: 2rem;
   margin: 0 2px;
+  width: 2rem;
 }
 .resizer::before {
   left: 0;

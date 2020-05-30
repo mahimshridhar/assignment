@@ -27,8 +27,12 @@ export const colors = {
 const initialState = {
   titles: ["My group", "Person", "Status", "Date", "Contact"],
   content: [
-    ["some shit", "mahim", "Done", "apr 02", "9632464772"],
-    ["some shit 2", "agim", "Pending", "apr 07", "9632464772"],
+    ["test", "mahim", "Done", "apr 02", "9632464772"],
+    ["test2", "person2", "Pending", "apr 07", "9632464772"],
+    ["test3", "person4", "Stuck", "apr 27", "9632464772"],
+    ["test4", "person410", "Done", "apr 21", "9632464772"],
+    ["test5", "person1", "Critical", "apr 13", "9632464772"],
+    ["test6", "person10", "Working on it", "apr 03", "9632464772"],
   ],
 };
 
