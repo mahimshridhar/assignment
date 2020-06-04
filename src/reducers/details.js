@@ -74,7 +74,11 @@ export default (state = initialState, action) => {
         ...state,
         content: [
           ...state.content,
-          new Array(state.content[0].length).fill(""),
+          new Array(state.content[0].length).fill("").map((elem, index) => {
+            if (state.titles[index] === "Status") {
+              return "Pending";
+            }
+          }),
         ],
       };
     case ADD_COLUMN:

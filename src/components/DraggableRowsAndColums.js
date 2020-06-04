@@ -88,9 +88,20 @@ export default class Draggable extends React.Component {
   };
 
   handleEditableTitles = (i, editTitle, x) => {
+    console.log(this.state.editTitle);
     return this.state.editTitle.status && this.state.editTitle.row === i ? (
       <input
+        value={this.state.editTitle.value}
         autoFocus
+        onFocus={() =>
+          this.setState({
+            ...this.state,
+            editTitle: {
+              ...this.state.editTitle,
+              value: x,
+            },
+          })
+        }
         onBlur={() => {
           editTitle({
             titleIndex: i,
@@ -124,7 +135,17 @@ export default class Draggable extends React.Component {
       this.state.editCell.row === i &&
       this.state.editCell.col === j ? (
       <input
+        value={this.state.editCell.value}
         autoFocus
+        onFocus={() =>
+          this.setState({
+            ...this.state,
+            editCell: {
+              ...this.state.editCell,
+              value: y,
+            },
+          })
+        }
         onBlur={() => {
           console.log("on blur callwd");
           editTable({
@@ -351,6 +372,7 @@ export default class Draggable extends React.Component {
             width: 0,
             height: 0,
             overflow: "hidden",
+            background: "red",
           }}
         />
       </div>
